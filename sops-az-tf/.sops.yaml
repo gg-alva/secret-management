@@ -1,0 +1,4 @@
+creation_rules:
+  - path_regex: /*secret(\.encrypted)?.yaml$
+    encrypted_regex: "^(username|password)$"
+    azure_keyvault: https://dm-kv-tf-gau.vault.azure.net/keys/sops-encryption-key
